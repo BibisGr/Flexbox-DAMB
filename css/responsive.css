@@ -1,80 +1,50 @@
-body{
-    background-color: darkblue;
-    color: aliceblue;
+body {
+  background-color: aliceblue;
+  color: black;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: #cececc 1px solid;
+  display: flex;
 }
-.container .info{
-    background-color: white;
-    color: black;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
+.info {
+    width: 35%;
+  background-color: darkblue;
 }
-.container .info .info-basic{
-    display: flex;
+.info hr {
+  border: 1px solid white;
+  width: 100%;
+  margin: 10px;
+}
+.info-basic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info img {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.cv-content {
+  width: 65%;
+}
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+  .info {
+    width: 100%;
+  }
+  .info hr{
+    width: 90%;
+  }
+  .cv-content {
+    width: 100%;
+  }
+  .cv-content{
+    width: 100%;
+  }
 }
-
-@media (max-width:480px){
-    h2{
-        font-size: 2em;
-    }
-    p{
-        font-size: 1.5em;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .info{
-        background-color: rgba(255, 255, 255, 0.784);
-        color: black;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-}
-
-
-
-
-/* 
-@media (max-width:480px){
-    /* version movil más pequeño 
-    .container{
-        background-color: darkgreen;
-    }
-    .container .box h1{
-        color: white;
-    }
-} */
-/* @media (max-width:768px){
-    body{
-        background-color: darkred;
-        color:indianred
-    }
-}
-@media (max-width:480px){
-    body{
-        background-color: darkgreen;
-        color:darkgoldenrod;
-    }
-    
-} */
-
-/* 
-480 movil ppppp
-600 mobile ooooooo
-
-768 tablet pppppp
-900 tablets y desktop 000000
-
-1200 desktop 0000
-
- */

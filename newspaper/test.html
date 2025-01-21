@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/testMenu.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+        </nav>
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+            <a href="#">Menu Option</a>
+        </nav>
+    </header>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('active');
+        });
+      </script>
+</body>
+</html>

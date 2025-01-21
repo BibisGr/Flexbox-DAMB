@@ -18,17 +18,34 @@
         <strong>Página 1</strong>
     </div>
 
-    <div class="main-menu">
-        <ul>
-            <li><a href="#">El Mundo</a></li>
-            <li><a href="#">Nacionales</a></li>
-            <li><a href="#">Política</a></li>
-            <li><a href="#">Deporte</a></li>
-            <li><a href="#">Cultura</a></li>
-            <li><a href="#">Farándula</a></li>
-            <li><a href="#">El Tiempo</a></li>
-        </ul>
+    <nav class="main-menu">
+        <a href="#">Inicio</a>
+        <a href="#">Nacionales</a>
+        <a href="#">Internacionales</a>
+        <a href="#">Economía</a>
+        <a href="#">Deportes</a>
+        <a href="#">Cultura</a>
+        <a href="#">Tecnología</a>
+        <a href="#">Opinión</a>
+        <a href="#">Más</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#">Inicio</a>
+        <a href="#">Nacionales</a>
+        <a href="#">Internacionales</a>
+        <a href="#">Economía</a>
+        <a href="#">Deportes</a>
+        <a href="#">Cultura</a>
+        <a href="#">Tecnología</a>
+        <a href="#">Opinión</a>
+        <a href="#">Más</a>
+    </nav>
+
     <div class="container">
         <section class="FirstNew">
             <div class="col">
@@ -59,12 +76,54 @@
                 <p>Este maletín de herramientas incluye un juego completo de llaves de vaso y puntas de destornillador.
                     Este conjunto de 130 piezas es ideal tanto para aficionados al bricolaje como para profesionales que
                     necesiten herramientas versátiles y de buena calidad en su día a día.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, adipisci? Facere illo ratione
-                    deleniti ab obcaecati odit quam natus distinctio inventore aliquid magnam ducimus omnis, blanditiis
-                    dolore voluptas vitae. Nulla?</p>
+            </div>
+        </section>
+        <section class="noticiasDelDia">
+            <div class="card-notice">
+                <div class="notice-text">
+                    <h3>Insecto mortal detectado en España</h3>
+                    <img src="https://okdiario.com/img/2023/09/13/hormiga-roja-de-fuego2-635x358.jpg"
+                        alt="La hormiga roja de fuego amenaza a Europa">
+
+                </div>
+                <p>Se ha confirmado la presencia en España de un insecto cuya picadura puede ser letal. Las
+                    autoridades
+                    sanitarias han emitido alertas para informar a la población sobre los riesgos asociados y las
+                    medidas preventivas a tomar. <a href="#">Ver más...</a></p>
+            </div>
+            <div class="card-notice">
+                <div class="notice-text">
+                    <h3>Hallazgo del primer mapa en 3D de la historia</h3>
+                    <img src="https://www.mundodeportivo.com/files/image_948_465/files/fp/uploads/2025/01/08/677ea93d09790.r_d.622-410-7406.jpeg"
+                        alt="El primer mapa en 3D de la historia: un hallazgo que cambia todo lo que sabíamos">
+                </div>
+                <p>Un reciente descubrimiento arqueológico ha sacado a la luz el que podría ser el primer mapa
+                    tridimensional creado por la humanidad. <a href="#">Ver más...</a></p>
+
+            </div>
+            <div class="card-notice">
+                <div class="notice-text">
+                    <h3> Moneda española alcanza valor superior al premio de la Lotería del Niño</h3>
+                    <img src="https://www.mundodeportivo.com/files/content_image_desktop_filter/uploads/2025/01/08/677eaeba97d0d.png"
+                        alt="Esta moneda te puede hacer ganar más de 1.000 euros">
+                </div>
+                <p>Una moneda antigua de España ha sido tasada recientemente con un valor que supera al del premio
+                    de la Lotería del Niño. Este hecho ha despertado un gran interés entre coleccionistas y
+                    aficionados a la numismática, <a href="#">Ver más...</a>.
+                </p>
+
             </div>
         </section>
     </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
